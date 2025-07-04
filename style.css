@@ -1,0 +1,157 @@
+/* Mengimpor font yang lebih lembut dan modern */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fffcf2; /* Warna latar baru: krem sangat muda */
+    color: #5f6368;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px; /* Sudut lebih tumpul agar terlihat lebih soft */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07); /* Bayangan lebih halus */
+}
+
+h1 {
+    color: #a2d2ff; /* Biru langit pastel */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #cdb4db; /* Lavender pastel */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px; /* Sudut lebih tumpul */
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: #b5a0c5; /* Warna lavender lebih gelap saat disentuh */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Sedikit lebih banyak ruang antar elemen form */
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: 700; /* Ditebalkan agar mudah dibaca */
+    margin-bottom: 0;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px; /* Padding sedikit lebih besar */
+    border: 1px solid #e9ecef; /* Warna border sangat terang */
+    border-radius: 8px; /* Sudut tumpul agar cocok dengan tema */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat input form dipilih (lebih bagus dan jelas) */
+form input[type="text"]:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #a2d2ff; /* Border menjadi biru pastel */
+    box-shadow: 0 0 0 3px rgba(162, 210, 255, 0.4); /* Efek glow biru */
+}
+
+form button {
+    background-color: #caffbf; /* Hijau limau pastel */
+    color: #5f6368; /* Warna teks abu-abu agar terbaca jelas */
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b8eabc; /* Warna hijau lebih gelap saat disentuh */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /* Tambahkan ini agar sudut tabel tumpul */
+    overflow: hidden;   /* Penting agar border-radius berfungsi */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan halus untuk tabel */
+}
+
+table th, table td {
+    border: none; /* Hapus border lama */
+    border-bottom: 1px solid #e9ecef; /* Beri garis bawah saja agar rapi */
+    padding: 14px; /* Sedikit lebih lega */
+    text-align: left;
+}
+
+table th {
+    background-color: #a2d2ff; /* Latar header tabel menjadi biru pastel */
+    color: #495057; /* Warna teks abu-abu tua agar kontras */
+    font-weight: 700;
+}
+
+/* Hilangkan garis bawah di baris terakhir agar rapi */
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Warna belang pada baris genap */
+table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Warna baris ganjil (putih) */
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+a {
+    color: #a2d2ff; /* Biru pastel untuk semua link */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Gaya untuk foto di dalam tabel */
+.foto-siswa {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Mencegah gambar menjadi gepeng */
+    border-radius: 8px; /* Membuat sudut foto tumpul */
+    display: block;
+    margin: auto;
+}
